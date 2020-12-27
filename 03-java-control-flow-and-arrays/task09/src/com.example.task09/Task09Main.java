@@ -11,11 +11,15 @@ public class Task09Main {
         arr[2] = 3;
         System.out.println(min(arr));
          */
+
     }
 
     static int min(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int min = Integer.MAX_VALUE;
+        for (int element : arr)
+            if (element < min)
+                min = element;
+        return min;
     }
 
 }
